@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            clear: both;
+        }
+
+        /* body{
+            background-image: url("bodyimage7.avif");
+            background-size:cover;
+            height: 100%;
+            width: 100%;
+        } */
+        body {
+            position: relative;
+            animation-name: body;
+            animation-duration: 1s;
+        }
+
+        body::before {
+            content: '';
+            background-image: url("bodyimage7.avif");
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0px;
+            left: 0px;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        #navigation {
+            border: 3px dotted rgb(57, 189, 212);
+            border-radius: 20px;
+            background-image: url("navigation3.webp");
+            background-size: cover;
+            color: antiquewhite;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            height: 100px;
+            width: 100%;
+            animation-name: navigation;
+            animation-duration: 2s;
+        }
+
+        @keyframes navigation {
+            from {
+                height: 10px;
+                width: 50px;
+                translate: -150vw 0;
+            }
+
+            to {
+                height: 100px;
+                width: 100%;
+                translate: 0vw 0;
+            }
+        }
+
+        @keyframes body {
+            from {
+                height: 10px;
+                width: 50px;
+                translate: -150vw 0;
+            }
+
+            to {
+                height: 100px;
+                width: 100%;
+                translate: 0vw 0;
+            }
+        }
+
+        mark {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(39, 1, 253);
+        }
+
+        a {
+            display: inline-block;
+            font-size: 30px;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 238, 0);
+            transition: all 0.8s;
+        }
+
+        .links {
+            margin-left: 110px;
+            margin-top: 20px;
+
+        }
+
+        #footer {
+            background-image: url("footer2.avif");
+            background-size: contain;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            height: 210px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: 900;
+            color: red;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 900;
+            text-decoration: underline;
+            text-align: center;
+            color: green;
+        }
+
+        h1:hover {
+            color: rgb(119, 124, 69);
+            position: relative;
+            left: 20px;
+            font-size: 35px;
+            font-family: cursive;
+        }
+
+        h2:hover {
+            color: rgb(10, 109, 10);
+            position: relative;
+            left: 20px;
+            font-size: 30px;
+            font-family: cursive;
+        }
+
+        h4 {
+            background-color: rgb(255, 0, 0);
+            border-radius: 50%;
+            color: rgb(0, 255, 242);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: oblique;
+            text-align: center;
+        }
+
+        a:hover {
+            font-family: cursive;
+            color: antiquewhite;
+            transform: scale(0.8);
+        }
+
+        table {
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            background-color: rgb(189, 189, 77);
+            color: rgb(19, 20, 19);
+            border-radius: 7%;
+        }
+
+        .button {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 30px;
+            width: 80px;
+            font-size: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        iframe {
+            margin-left: 480px;
+            border-radius: 5%;
+            border: 5px solid rgb(180, 236, 49);
+        }
+
+        @media (max-width:600px) {
+            iframe {
+                margin-left: 80px;
+            }
+
+            #navigation {
+                height: 300px;
+
+            }
+
+            .links {
+                float: left;
+                display: block;
+                float: none;
+                position: relative;
+                left: 100px;
+            }
+            #footer{
+                height: 210px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navigation">
+        <a class="links" href="projecthtml.html">Home</a>
+        <a class="links" href="indianculture.html">cultures</a>
+        <a class="links" href="landmarks.html">land marks</a>
+        <a class="links" href="indiandish.html">Cuisines</a>
+        <a class="links" href="contact.html">Contact us</a>
+    </div>
+
+
+    <h1 align="center"><u>Contact Us</u></h1>
+    <p align="center">Please fill out the form below for any inquiries or to register as a student.</p>
+    <hr>
+    <!-- Student Registration Form -->
+
+    <h2 align="center"><u>Student Registration Form</u></h2>
+    <form>
+        <table cellspacing="10" align="center">
+            <tr>
+                <td class="d1">
+                    <label>First Name:</label>
+                </td>
+                <td><input type="text" placeholder="Enter your first name">
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="d1">
+                    <label for="b">Password:</label>
+                </td>
+                <td> <input type="password" value="********">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender:</label>
+                </td>
+                <td> <input type="radio" id="c" name="Gender"><label for="c">Male</label>
+                    <input type="radio" id="d" name="Gender"><label for="d">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="e">Subscribe to Newsletter:</label>
+                </td>
+                <td><input type="checkbox" id="e" checked>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="f">State:</label>
+                </td>
+                <td> <select name="State" id="f">
+                        <option>Gujarat</option>
+                        <option>Maharastra</option>
+                        <option>Bihar</option>
+                        <option>Kerala</option>
+                        <option>Bengal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="g">Upload Resume:</label>
+                </td>
+                <td> <input type="file" value="Choose File" id="g">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="h">Address:</label>
+                </td>
+                <td><textarea name="Address" id="h" rows="3" cols="24" placeholder="enter your full address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="i">Date Of Birth:</label>
+                </td>
+                <td> <input type="date" id="i">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="j">Preferred Interview Time:</label>
+                </td>
+                <td> <input type="time" id="j">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="h">Marks:</label>
+                </td>
+                <td> <input type="text" id="h">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit" name="Submit" style="margin-left: 200px;" class="button">
+                </td>
+                <td><input type="reset" name="Reset" value="Reset" class="button">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    <hr>
+
+    <!-- More Information -->
+
+    <h2>More Information</h2>
+    <p>Explore government job opportunities on the official OJAS website:</p>
+    <iframe src="https://ojas.gujarat.gov.in/AdvtList.aspx?type=lCxUjNjnTp8=" frameborder="5" height="300px"
+        width="400px"></iframe>
+
+    <div id="footer">
+        <p><a href="projecthtml.html"><--Back to Home</a></p>
+        <p>Contact us at <a href="info@incredibleindia.com">info@incredibleindia.com</a></p>
+        <p>&copy;2025 Incredible India Project</p>
+        <a href="#">Twitter</a> | <a href="#">Facebook</a>
+
+    </div>
+    <h4>Made by Faldu vrajesh</h3>
+
+
+
+</body>
+
+</html>

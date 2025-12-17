@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         n=5;
+         
+        for(let i=1;i<=n;i++){
+            for(let j=0;j<n-i;j++){
+                document.write("&nbsp;&nbsp;&nbsp;");
+            }
+            ans=1;
+            for(let k=0;k<i;k++){
+            document.write(parseInt(ans)+"&nbsp;&nbsp;");
+            
+            ans=(ans*(i-k))/(k+1);
+            
+            }
+            document.write("1")     
+            document.write("<br/>")
+            
+        }
+    </script>
+    
+</body>
+</html>
