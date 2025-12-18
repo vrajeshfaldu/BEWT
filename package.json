@@ -8,11 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "body-parser": "^2.2.1",
     "cors": "^2.8.5",
     "express": "^5.2.1",
     "parser": "^0.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrajeshfaldu/BEWT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vrajeshfaldu/BEWT/issues"
+  },
+  "homepage": "https://github.com/vrajeshfaldu/BEWT#readme",
+  "description": ""
 }
